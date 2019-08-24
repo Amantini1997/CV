@@ -1,6 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <Header></Header>
-    Welcome to {{ title }}!
+<div [ngSwitch]="currentPage">
+    <p *ngSwitchCase="Home">
+        Home Page
+    </p>
+    <p *ngSwitchCase="Education">
+        Education Page
+    </p>
+    <p *ngSwitchCase="Work">
+        Work Page
+    </p>
+    <p *ngSwitchCase="IT Tools">
+        IT tools Page
+    </p>
+    <p *ngSwitchDefault>
+        Error 404
+    </p>
 </div>
-
