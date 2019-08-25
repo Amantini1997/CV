@@ -1,0 +1,40 @@
+$arrow-dimension: 30px
+
+#top-button
+    text-decoration: none !important
+    background-color: white
+    position: fixed
+    bottom: 10vh
+    right: 10vh
+    opacity: .85
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px
+    border: solid 2px
+    height: $arrow-dimension
+    width: $arrow-dimension
+    border-radius: $arrow-dimension
+    font-weight: bold
+    font-size: 1.3rem
+    box-shadow: 2px 3px 6px -3px black
+    transition: box-shadow .2s
+    cursor: pointer
+
+    &:hover
+        opacity: 1
+
+        // &::before
+        //     content: "Return to top"
+        //     position: absolute
+        //     bottom: 20px
+        //     right: 15px
+        //     background-color: rgba(0, 0, 0, .8)
+        //     color: white
+        //     border-radius: 10px
+
+
+    &:active
+        transition: box-shadow .1s
+        box-shadow: 2px 3px 2px -4px black
+    

@@ -1,0 +1,158 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "colour": "#000080",
+      "cards": [
+        {
+            "source": "/assets/images/react.png",
+            "title": "React",
+            "content": [
+                "React has been my first frontend framework, "
+            ]
+        },
+        {
+            "source": "/assets/images/angular.png",
+            "title": "Angular",
+            "content": ["Text about Angular"]
+        },
+        {
+            "source": "/assets/images/CSS-HTML-JS.png",
+            "title": "CSS",
+            "content": [
+                "Text about CSS"
+            ]
+        },
+        {
+            "source": "/assets/images/react.png",
+            "title": "SASS",
+            "content": [
+                "Text about SASS"
+            ]
+        }]
+    },
+    {
+      "name": "Education",
+      "colour": "#006400",
+      "cards": [
+        {
+            "source": "/assets/images/KCL.png",
+            "title": "King's College London",
+            "content": [
+                "Start: September 2017\nEnd: June 2020\nPrgoram: Bsci Computer Science with Management and Year in Industry"
+            ]
+        }]
+    },  
+    {
+      "name": "Work",
+      "colour": "#000000",
+      "cards": [
+        {
+            "source": "/assets/images/react.png",
+            "title": "React",
+            "content": [
+                "Text about React"
+            ]
+        },
+        {
+            "source": "/assets/images/angular.png",
+            "title": "Angular",
+            "content": [
+                "Text about Angular"
+            ]
+        },
+        {
+            "source": "/assets/images/CSS-HTML-JS.png",
+            "title": "CSS",
+            "content": [
+                "Text about CSS"
+            ]
+        },
+        {
+            "source": "/assets/images/react.png",
+            "title": "SASS",
+            "content": [
+                "Text about SASS"
+            ]
+        }]
+    },
+    {
+      "name": "Web Development",
+      "colour": "#800000",
+      "cards": [
+        {
+            "source": "/assets/images/CSS-HTML-JS.png",
+            "title": "Web Pages",
+            "content": [
+                "I learnt HTML when I was back in high school, and now I have a solid ",
+                "understanding that allows me to easily create web pages. This knwoledge ",
+                "is backed up also by a remarkable css knwoledge which, alongside Javascript, ",
+                "allows me to create powerful and good looking websites."
+            ]
+        },
+        {
+            "source": "/assets/images/frontend.jpg",
+            "title": "Front End",
+            "content": [
+                "The time spent working with Javascript lead to use Node.js as a mean ",
+                "to install useful packages, including Ionic, React and Angular (used to ",
+                "this website)."
+            ]
+        },
+        {
+            "source": "/assets/images/angular.png",
+            "title": "Angular",
+            "content": [
+                "Text about Angular"
+            ]
+        },
+        {
+            "source": "/assets/images/react.png",
+            "title": "SASS",
+            "content": [
+                "Text about SASS"
+            ]
+        }]
+    },
+    {
+        "name": "Other Skills",
+        "colour": "#A06470",
+        "cards": [
+            {
+                "source": "/assets/images/java.png",
+                "title": "Java",
+                "content": [
+                    "Text about React"
+                ]
+            },
+            {
+                "source": "/assets/images/cpp.png",
+                "title": "C++",
+                "content": [
+                    "Text about Angular"
+                ]
+            },
+            {
+                "source": "/assets/images/scala.png",
+                "title": "Scala",
+                "content": [
+                    "Text about CSS"
+                ]
+            },
+            {
+                "source": "/assets/images/junit.png",
+                "title": "Testing",
+                "content": [
+                    "Text about CSS"
+                ]
+            },
+            {
+                "source": "/assets/images/linux.png",
+                "title": "Linux",
+                "content": [
+                    "Text about SASS"
+                ]
+            }
+        ]
+    }]
+}

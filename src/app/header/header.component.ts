@@ -1,15 +1,24 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
+  template: `
+    <div id="header" [ngStyle]="{'background-color': currentPage.colour}">
+      <div class="page" *ngFor="let page of pages" (click)="selectPage(page)">{{page.name}}</div>
+    </div> 
+  `,
   styleUrls: ['./header.component.sass']
 })
-export class Header implements OnInit {
+export class HeaderComponent implements OnInit {
 
-  @Input() pages;
+  @Input() pages : JSON[];
+  @Input() currentPage : JSON;
+  @Output() changePage = new EventEmitter();
   constructor() {}
 
   ngOnInit() {}
-
+  
+  selectPage(page : JSON) : void {
+    this.changePage.emit(page);
+  }
 }

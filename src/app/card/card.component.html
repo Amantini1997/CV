@@ -1,0 +1,13 @@
+<div class="card" [ngStyle]="{'border-color': colour}">
+    <img class="card-icon" [src]="data.source"/>
+    <div class="cardText"> 
+        <div class="card-title">{{data.title}}</div>
+        <hr [ngStyle]="{'border-color': colour}"/>
+        <!-- <div class="preview">
+            {{preview}}
+        </div> -->
+        <article class="content">
+            {{data.content.join("\n")}}
+        </article>
+    </div>
+</div>
