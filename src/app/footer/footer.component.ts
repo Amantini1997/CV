@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Page } from '../interfaces';
 
 @Component({
   selector: 'app-footer',
@@ -12,7 +13,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  @Input() currentPage: JSON;
+  @Input() currentPage: Page;
   constructor() { }
 
   ngOnInit() {

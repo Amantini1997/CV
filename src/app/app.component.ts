@@ -1,5 +1,6 @@
-import { Component, HostListener, ɵɵresolveBody } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { pages } from '../assets/pages/pages.json';
+import { Page } from './interfaces.js';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +32,7 @@ export class AppComponent {
     document.body.style.background = `rgba(${red},${green},${blue},.1)`;
   }
 
-  updateCurrentPage(event) : void {
+  updateCurrentPage(event : Page) : void {
     this.currentPage = event;
     this.changeBodyColour();
   }

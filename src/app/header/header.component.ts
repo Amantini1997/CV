@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { Page } from '../interfaces';
 @Component({
   selector: 'app-header',
   template: `
@@ -11,14 +11,14 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() pages : JSON[];
-  @Input() currentPage : JSON;
+  @Input() pages : Page[];
+  @Input() currentPage : Page;
   @Output() changePage = new EventEmitter();
   constructor() {}
 
   ngOnInit() {}
   
-  selectPage(page : JSON) : void {
+  selectPage(page : Page) : void {
     this.changePage.emit(page);
   }
 }

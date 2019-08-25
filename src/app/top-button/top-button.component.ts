@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Page } from '../interfaces';
 
 @Component({
   selector: 'topButton',
@@ -9,7 +10,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TopButtonComponent implements OnInit {
 
-  @Input() currentPage: JSON
+  @Input() currentPage: Page
   constructor() { }
 
   ngOnInit() {

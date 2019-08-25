@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Page, Card } from '../interfaces';
 
 @Component({
   selector: 'deck',
@@ -7,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DeckComponent implements OnInit {
 
-  @Input() cards : JSON[]
-  @Input() currentPage : JSON
+  @Input() cards : Card[]
+  @Input() currentPage : Page
   constructor() { }
 
   ngOnInit() {
