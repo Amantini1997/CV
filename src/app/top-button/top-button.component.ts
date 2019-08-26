@@ -1,10 +1,14 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { Page } from '../interfaces';
 
 @Component({
   selector: 'topButton',
   template: `
-    <a href="header" id="top-button" [ngStyle]="{'color': currentPage.colour}">&#8679;</a>
+    <button id="top-button" 
+            [ngStyle]="{'color': currentPage.colour}" 
+            (click)="scrollToTop()">
+      &#8679;
+    </button>
   `,
   styleUrls: ['./top-button.component.sass']
 })
@@ -13,8 +17,9 @@ export class TopButtonComponent implements OnInit {
   @Input() currentPage: Page
   constructor() { }
 
-  ngOnInit() {
-    document.getElementById("top-button").scrollIntoView({behavior: "smooth", inline: "start"});
-  }
+  ngOnInit() {}
 
+  scrollToTop(): void {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 }
