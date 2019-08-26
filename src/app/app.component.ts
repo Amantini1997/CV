@@ -32,8 +32,8 @@ export class AppComponent {
     let red = colour.substring(1,3);
     let green = colour.substring(3,5);
     let blue = colour.substring(5,7);
-    document.body.style.cssText = `background: rgba(${red},${green},${blue},.1); 
-                                   ::-webkit-scrollbar-thumb{background: rgb(78, 78, 78)}`;
+    document.body.style.cssText = `background: rgba(${red},${green},${blue},.1);`;
+                                  //  ::-webkit-scrollbar-thumb{background: rgb(78, 78, 78)}`;
   }
 
   updateCurrentPage(event : Page) : void {
