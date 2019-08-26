@@ -5,7 +5,7 @@
       "colour": "#000000",
       "cards": [
         {
-            "source": "/assets/images/profile.png",
+            "source": "assets/images/profile.png",
             "title": "In General",
             "content": [
                 "Hello,<br />",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "source": "/assets/images/hobbies.png",
+            "source": "assets/images/hobbies.png",
             "title": "Hobbies",
             "content": [
                 "My main hobbies are:",
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "source": "/assets/images/contacts.png",
+            "source": "assets/images/contacts.png",
             "title": "Contacts and References",
             "content": [
                 "<ul>",
@@ -64,7 +64,7 @@
       "colour": "#006400",
       "cards": [
         {
-            "source": "/assets/images/KCL.png",
+            "source": "assets/images/KCL.png",
             "title": "King's College London",
             "content": [
                 "<ul>",
@@ -100,14 +100,14 @@
                 "</ul>"
             ]
        }],
-      "background" : "/assets/images/KCL.png"
+      "background" : "assets/images/KCL.png"
     },  
     {
       "name": "Work",
       "colour": "#000080",
       "cards": [
         {
-            "source": "/assets/images/pcms.png",
+            "source": "assets/images/pcms.png",
             "title": "PCMS",
             "content": [
                 "<ul>",
@@ -137,7 +137,7 @@
       "colour": "#800000",
       "cards": [
         {
-            "source": "/assets/images/CSS-HTML-JS.png",
+            "source": "assets/images/CSS-HTML-JS.png",
             "title": "Web Pages",
             "content": [
                 "I learnt <b>HTML</b> when I was back in high school, and now I have a solid ",
@@ -147,7 +147,7 @@
             ]
         },
         {
-            "source": "/assets/images/nodejs.png",
+            "source": "assets/images/nodejs.png",
             "title": "Node.Js",
             "content": [
                 "In order to improve the usage of Javascript, I decided to learn <b>Node.Js</b>: ",
@@ -156,7 +156,7 @@
             ]
         },
         {
-            "source": "/assets/images/frontend.jpg",
+            "source": "assets/images/frontend.jpg",
             "title": "Front End",
             "content": [
                 "Via Node.js I started to practice with some of its most famous packages:",
@@ -188,7 +188,7 @@
         "colour": "#A06470",
         "cards": [
             {
-                "source": "/assets/images/languages.png",
+                "source": "assets/images/languages.png",
                 "title": "Programming Languages",
                 "content": [
                     "My University provided me with knwoledge in different languages including:",
@@ -220,7 +220,7 @@
                 ]
             },
             {
-                "source": "/assets/images/junit.png",
+                "source": "assets/images/junit.png",
                 "title": "Testing",
                 "content": [
                     "No good program is ever complete without tests, this is why I learnt some ",
@@ -229,7 +229,7 @@
                 ]
             },
             {
-                "source": "/assets/images/sql.png",
+                "source": "assets/images/sql.png",
                 "title": "Database",
                 "content": [
                     "My IT knowledge includes databases as well, more specifically, I have been ",
@@ -237,7 +237,7 @@
                 ]
             },
             {
-                "source": "/assets/images/linux.png",
+                "source": "assets/images/linux.png",
                 "title": "OS",
                 "content": [
                     "I have a deep understanding of how <b>operating systems</b> work and I can easily switch ",
