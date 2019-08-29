@@ -8,7 +8,7 @@ import { Card } from '../interfaces';
     <img class="card-icon" [src]="card.source"/>
     <div class="cardText"> 
         <div class="card-title">{{card.title}}</div>
-        <hr [ngStyle]="{'border-color': colour}"/>
+        <div class="line" [ngStyle]="{'border-color': colour}"></div>
         <!-- <div class="preview">
             {{preview}}
         </div> -->
