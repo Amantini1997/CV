@@ -3,41 +3,58 @@
 .card 
     border: solid 3px
     border-radius: 10px
-    margin: 0 $card-margin $card-margin 
+    margin-bottom: 20px
     box-shadow: 0 8px 6px -6px black 
-    box-sizing: border-box 
-    display: flex 
+    box-sizing: content-box 
+    display: inline-flex 
+    flex-direction: column
+    // flex: 1 45%
     align-items: center 
     justify-content: space-around
     align-content: space-around 
     max-height: 100% 
     padding: 10px
     background-color: white
-    flex: 20%
+    opacity: 0
+    animation: popUp ease-out // cubic-bezier(1,-0.02, 0.85, 1.3)
+    animation-fill-mode: forwards
+    overflow: hidden
+
+    // &:focus
+    //     flex-direction: row
+        
+    //     hr
+    //         border: 3px solid
+        
+    //     .content
+    //         display: initial
+
+    // hr
+    //     border: 0
+    
+    // .content
+    //     display: none
 
 $icon-dimension: 20%
 
 .card-icon  
     width: $icon-dimension
     height: $icon-dimension
-    margin-right: auto
-    height: auto 
+    // display: block
+    // margin: auto
+    // height: auto 
+    float: left
+    clear: right
     border-radius: 10px
     
 .cardText
     padding: 15px   
     width: 80%
-  
-// .preview  
-//     margin-left: 3px 
-//     font-size: 1.2rem 
-//     text-align: center 
-//     font-family: 'Red Hat Display', sans-serif 
-//     font-weight: 700 
 
-hr  
-    border: 3px solid  
+hr   
     border-radius: 3px  
+            border: 3px solid
+    transition: all 0s
 
 .content  
     // display: none 
@@ -45,9 +62,26 @@ hr
     letter-spacing: 50% 
     line-height: 1.5em 
 
-
 .card-title  
     font-size: 1.3rem 
     font-weight: bold 
     font-family: 'Red Hat Display', sans-serif 
     text-align: center
+
+@keyframes showUp
+    0%
+        opacity: 0
+        transform: translateX(-200px)
+    100%
+        opacity: 1
+        transform: translateX(0)
+
+        
+@keyframes popUp
+    0%
+        transform: scale(.1)
+        opacity: 0
+        
+    100%
+        transform: scale(1)
+        opacity: 1

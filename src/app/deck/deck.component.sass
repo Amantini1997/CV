@@ -1,6 +1,29 @@
+@import '/../../variables.sass'
+    
 #deck
-    display: flex   
-    justify-content: center
-    align-items: center
-    flex-flow: column wrap
-    width: 100%
+    //----FELXBOX LAYOUT-----
+    // display: flex   
+    // justify-content: center
+    // align-items: center
+    // flex-flow: row wrap
+
+    //------GRID LAYOUT------
+    // display: grid
+    // grid-template-columns: repeat(3, 1fr)
+    // grid-column-gap: $card-margin
+    // margin: $card-margin
+
+    //----MASONRY LAYOUT----
+    column-count: 2
+    margin: $card-margin
+    // column-gap: $card-margin
+
+@media only screen and (max-width: 900px)
+    #deck
+        // grid-template-columns: repeat(2, 1fr)
+        column-count: 2
+
+@media only screen and (max-width: 600px)
+    #deck
+        // grid-template-columns: repeat(1, 1fr)
+        column-count: 1

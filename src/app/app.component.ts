@@ -12,8 +12,8 @@ import { Page } from './interfaces.js';
       <deck [cards]="currentPage.cards" 
             [currentPage]="currentPage" 
             [ngStyle]="{'background-image': currentPage.background}"></deck>
+      <app-footer [currentPage]="currentPage"></app-footer>
     </div>
-    <app-footer [currentPage]="currentPage"></app-footer>
     <!-- <topButton [currentPage]="currentPage"></topButton> -->
   `,
   styleUrls: ['./app.component.sass']
@@ -29,10 +29,10 @@ export class AppComponent {
 
   changeBodyColour(): void {
     let colour = this.currentPage.colour;
-    let red = colour.substring(1,3);
-    let green = colour.substring(3,5);
-    let blue = colour.substring(5,7);
-    document.body.style.cssText = `background: rgba(${red},${green},${blue},.1);`;
+    let red = parseInt(colour.substring(1,3), 16);
+    let green = parseInt(colour.substring(3,5), 16);
+    let blue = parseInt(colour.substring(5,7), 16);
+    document.body.style.cssText = `background: rgba(${red},${green},${blue},.2);`;
                                   //  ::-webkit-scrollbar-thumb{background: rgb(78, 78, 78)}`;
   }
 

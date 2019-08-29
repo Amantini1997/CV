@@ -11,8 +11,28 @@
                 "Hello,<br />",
                 "My name is Alessandro, a Computer Science(with Management) student at <a href='https://www.kcl.ac.uk/'>King's College London</a>.",
                 "Currently, I am a placement student working in Coventry for PCMS. I am <b>Italian</b>, living in Rome, ",
-                "but I moved to London in 2017 to attend University. I love programming because it's very logic and I ",
-                "like solving problems, creating algorithms and seeing the results of what I do in real time"
+                "but I moved to London in 2017 to attend University. I love programming because it's very logical and I ",
+                "like solving problems, creating algorithms and seeing the results of what I do in real time."
+            ]
+        },
+        {
+            "source": "assets/images/contacts.png",
+            "title": "Contacts and References",
+            "content": [
+                "<ul>",
+                    "<li>",
+                        "<b>Phone:</b> +44 7919824459",
+                    "</li>",
+                    "<li>",
+                        "<b>Email:</b> ale.amantini1997@gmail.com",
+                    "</li>",
+                    "<li>",
+                        "<b>Github:</b> <a href='https://github.com/Amantini1997'>Amantini1997</a>",
+                    "</li>",
+                    "<li>",
+                        "<b>Location:</b> Newcombe Road, CV5 6NL, Coventry, UK",
+                    "</li>",
+                "</ul>"
             ]
         },
         {
@@ -37,31 +57,11 @@
                     "</li>",
                 "</ul>"
             ]
-        },
-        {
-            "source": "assets/images/contacts.png",
-            "title": "Contacts and References",
-            "content": [
-                "<ul>",
-                    "<li>",
-                        "<b>Phone:</b> +44 7919824459",
-                    "</li>",
-                    "<li>",
-                        "<b>Email:</b> ale.amantini1997@gmail.com",
-                    "</li>",
-                    "<li>",
-                        "<b>Github:</b> <a href='https://github.com/Amantini1997'>Amantini1997</a>",
-                    "</li>",
-                    "<li>",
-                        "<b>Location:</b> Newcombe Road, CV5 6NL, Coventry, UK",
-                    "</li>",
-                "</ul>"
-            ]
         }]
     },
     {
       "name": "Education",
-      "colour": "#006400",
+      "colour": "#800000",
       "cards": [
         {
             "source": "assets/images/KCL.png",
@@ -104,7 +104,7 @@
     },  
     {
       "name": "Work",
-      "colour": "#000080",
+      "colour": "#000060",
       "cards": [
         {
             "source": "assets/images/pcms.png",
@@ -134,7 +134,7 @@
     },
     {
       "name": "Web Development",
-      "colour": "#800000",
+      "colour": "#006400",
       "cards": [
         {
             "source": "assets/images/CSS-HTML-JS.png",
@@ -152,7 +152,7 @@
             "content": [
                 "In order to improve the usage of Javascript, I decided to learn <b>Node.Js</b>: ",
                 "I now have a solid understanding of how to use and what it means global ",
-                "and local packages, the nvm to upgrade node, and all the main terminal commands"
+                "and local packages, the nvm to upgrade node, and all the main terminal commands."
             ]
         },
         {
@@ -185,8 +185,26 @@
     },
     {
         "name": "IT Skills",
-        "colour": "#A06470",
+        "colour": "#066b6e",
         "cards": [
+            {
+                "source": "assets/images/junit.png",
+                "title": "Testing",
+                "content": [
+                    "No good program is ever complete without tests, this is why I learnt some ",
+                    "testing frameworks including <b>JUnit</b> and <b>Mockito</b> for Java, and ",
+                    "<b>Mocha</b> and <b>Jasmine</b> for Javascript."
+                ]
+            },
+            {
+                "source": "assets/images/linux.png",
+                "title": "OS",
+                "content": [
+                    "I have a deep understanding of how <b>operating systems</b> work and I can easily switch ",
+                    "from a <b>Linux</b> distro to <b>Windows</b>. Also, I execute most of the commands from the terminal ",
+                    "thanks to my good knwoledge of <b>bash</b> and <b>batch</b> commands."
+                ]
+            },
             {
                 "source": "assets/images/languages.png",
                 "title": "Programming Languages",
@@ -220,29 +238,11 @@
                 ]
             },
             {
-                "source": "assets/images/junit.png",
-                "title": "Testing",
-                "content": [
-                    "No good program is ever complete without tests, this is why I learnt some ",
-                    "testing frameworks including <b>JUnit</b> and <b>Mockito</b> for Java, and ",
-                    "<b>Mocha</b> and <b>Jasmine</b> for Javascript."
-                ]
-            },
-            {
                 "source": "assets/images/sql.png",
                 "title": "Database",
                 "content": [
                     "My IT knowledge includes databases as well, more specifically, I have been ",
                     "trained on the relational database <b>MySql.</b>"
-                ]
-            },
-            {
-                "source": "assets/images/linux.png",
-                "title": "OS",
-                "content": [
-                    "I have a deep understanding of how <b>operating systems</b> work and I can easily switch ",
-                    "from a <b>Linux</b> distro to <b>Windows</b>. Also, I execute most of the commands from the terminal ",
-                    "thanks to my good knwoledge of <b>bash</b> and <b>batch</b> commands."
                 ]
             }
         ]

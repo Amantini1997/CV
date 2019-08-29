@@ -1,4 +1,6 @@
-<card *ngFor="let card of cards; let id = index" 
-    [colour]="currentPage.colour" 
-    [card]="card"
-    [id]="id"></card>
+<div id="deck">
+    <card *ngFor="let card of cards; let id = index" 
+        [colour]="currentPage.colour" 
+        [card]="card"   
+        [id]="id"></card>
+</div>

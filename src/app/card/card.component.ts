@@ -4,28 +4,39 @@ import { Card } from '../interfaces';
 @Component({
   selector: 'card',
   template: `
-    <div class="card" [ngStyle]="{'border-color': colour}">
-      <img class="card-icon" [src]="card.source"/>
-      <div class="cardText"> 
-          <div class="card-title">{{card.title}}</div>
-          <hr [ngStyle]="{'border-color': colour}"/>
-          <!-- <div class="preview">
-              {{preview}}
-          </div> -->
-          <article id="article{{id}}" class="content">
-            {{renderTextOf('article' + id)}}
-          </article>
-      </div>
+  <button class="card" [ngStyle]="styleObject()">
+    <img class="card-icon" [src]="card.source"/>
+    <div class="cardText"> 
+        <div class="card-title">{{card.title}}</div>
+        <hr [ngStyle]="{'border-color': colour}"/>
+        <!-- <div class="preview">
+            {{preview}}
+        </div> -->
+        <article id="article{{id}}" class="content">
+          {{renderTextOf('article' + id)}}
+        </article>
     </div>
+  </button>
 `,
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent implements OnInit {
 
+  readonly ANIMATION_FACTOR = 0.6;
+  readonly TIME_MEASURE = 's';
+
   @Input() colour: number
   @Input() card: Card
   @Input() id: number
   constructor() {}
+
+  styleObject(): Object {
+    return {
+      borderColor: this.colour,
+      animationDelay: this.id * this.ANIMATION_FACTOR + this.TIME_MEASURE,
+      animationDuration: this.ANIMATION_FACTOR + this.TIME_MEASURE,
+    };
+  }
 
   ngOnInit() {}
 
