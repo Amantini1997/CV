@@ -222,13 +222,13 @@
                             "practising a lot on low level machine structure.",
                         "</li>",
                         "<li>",
-                            "<b>Scala:</b> this has been my first functional language. I studied it at University for a module ",
+                            "<b>Scala:</b> this has been my first functional language. I studied it at University for a module;",
                             "it helped me learning how functional languages work and the importance of immutable collections.",
                         "</li>",
                         "<li>",
                             "<b>Python:</b> being one of the most used language nowadays and its use in ML, I decided to learn ",
                             "python on my own. I have started quite recently and do not consider myself proficient yet; hover, given ",
-                            "my interest on ML, I forsee I good knwoledge by the beginning of next academic year.",
+                            "my interest on ML, I forsee a good knwoledge by the beginning of next academic year.",
                         "</li>" ,
                         "<li>",
                             "<b>Javascript:</b> as mentioned in the web development section, I lately gained a lot of expertise in ",
@@ -241,7 +241,7 @@
                 "source": "assets/images/sql.png",
                 "title": "Database",
                 "content": [
-                    "My IT knowledge includes databases as well, more specifically, I have been ",
+                    "My IT knowledge includes databases as well; more specifically, I have been ",
                     "trained on the relational database <b>MySql.</b>"
                 ]
             }
