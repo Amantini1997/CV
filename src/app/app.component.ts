@@ -12,9 +12,9 @@ import { Page } from './interfaces.js';
       <deck [cards]="currentPage.cards" 
             [currentPage]="currentPage" 
             [ngStyle]="{'background-image': currentPage.background}"></deck>
-      <app-footer [currentPage]="currentPage"></app-footer>
+      <app-footer [currentPageColor]="currentPage.color"></app-footer>
     </div>
-    <!-- <topButton [currentPage]="currentPage"></topButton> -->
+    <topButton [currentPageColor]="currentPage.color"></topButton>
   `,
   styleUrls: ['./app.component.sass']
 })
@@ -24,20 +24,20 @@ export class AppComponent {
   pages = pages;
 
   constructor() {
-    this.changeBodyColour();
+    this.changeBodyColor();
   }
 
-  changeBodyColour(): void {
-    let colour = this.currentPage.colour;
-    let red = parseInt(colour.substring(1,3), 16);
-    let green = parseInt(colour.substring(3,5), 16);
-    let blue = parseInt(colour.substring(5,7), 16);
+  changeBodyColor(): void {
+    let color = this.currentPage.color;
+    let red = parseInt(color.substring(1,3), 16);
+    let green = parseInt(color.substring(3,5), 16);
+    let blue = parseInt(color.substring(5,7), 16);
     document.body.style.cssText = `background: rgba(${red},${green},${blue},.2);`;
                                   //  ::-webkit-scrollbar-thumb{background: rgb(78, 78, 78)}`;
   }
 
   updateCurrentPage(event : Page) : void {
     this.currentPage = event;
-    this.changeBodyColour();
+    this.changeBodyColor();
   }
 }

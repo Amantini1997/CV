@@ -3,7 +3,14 @@ import { Page, Card } from '../interfaces';
 
 @Component({
   selector: 'deck',
-  templateUrl: './deck.component.html',
+  template: `
+    <div id="deck" [class]="classify(currentPage.name)">
+      <card *ngFor="let card of cards; let id = index" 
+          [color]="currentPage.color" 
+          [card]="card"   
+          [id]="id"></card>
+    </div>
+  `,
   styleUrls: ['./deck.component.sass']
 })
 export class DeckComponent implements OnInit {
@@ -13,6 +20,10 @@ export class DeckComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  classify(name: string) : string {
+    return name.toLowerCase().replace(/\s/, "-");
   }
 
 }

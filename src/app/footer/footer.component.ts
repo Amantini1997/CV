@@ -1,32 +1,24 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Page } from '../interfaces';
 
 @Component({
   selector: 'app-footer',
   template: `
-    <div id="footer" [ngStyle]="{'background-color': currentPage.colour}">
-      <div class="footer-row">
-        <span><b>Phone:</b> +44 7919824459</span>
-        <span><b>Email:</b> ale.amantini1997@gmail.com</span>
-      </div>
-      <div class="footer-row">
-        <span><b>Github: </b><a href='https://github.com/Amantini1997' style="color: lightgrey;">Amantini1997</a></span>
-        <span><b>Location:</b> Newcombe Road, CV5 6NL, Coventry, UK</span>
-      </div>
-      <div class="footer-row">
-        <span>Amantini Alessandro's CV</span>
-        <span>Last update 2019</span>
-      </div>
-    </div> 
+    <footer [ngStyle]="{'background-color': currentPageColor}">
+        <div><b>Phone:</b> +44 7919824459</div>
+        <div><b>Email:</b> ale.amantini1997@gmail.com</div>
+        <div><b>Github: </b><a href='https://github.com/Amantini1997' style="color: lightgrey;">Amantini1997</a></div>
+        <div><b>Location:</b> Newcombe Road, CV5 6NL, Coventry, UK</div>
+        <hr class="full-row"/>
+        <div class="full-row">Last update 2020</div>
+    </footer> 
   `,
   styleUrls: ['./footer.component.sass']
 })
 export class FooterComponent implements OnInit {
 
-  @Input() currentPage: Page;
+  @Input() currentPageColor: string;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

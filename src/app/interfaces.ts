@@ -1,6 +1,6 @@
 export interface Page {
   name: string;
-  colour: string;
+  color: string;
   cards: Array<Card>;
   background: string;
 }

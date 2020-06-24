@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Alessandro Amantini</title>
+    <style>        
+        /* General CSS */
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a, a:visited, a:active {
+            outline: none;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        .full-circle {
+            border-radius: 100%;
+            background-color: #61cfff;
+            width: 10px;
+            height: 10px;
+            margin-right: 1px;
+            border: 1px solid black;
+            display: inline-flex;
+        }
+
+        .empty-circle {
+            border-radius: 100%;
+            width: 10px;
+            height: 10px;
+            margin-right: 1px;
+            border: 1px solid black;
+            display: inline-flex;
+        }
+
+        .circle-ctn {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        html {
+            background-image: linear-gradient(12deg, rgb(139, 176, 224), rgb(53, 209, 209));
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+
+        body {
+            max-width: 600px;
+            background-color: white;
+            margin: 0;
+            padding: 8px;
+            box-shadow: -7px 14px 40px 9px black;
+        }
+
+        /* Header CSS */
+        #title {
+            text-align: center;
+        }
+
+        #main-header {
+            display: grid;
+            grid-template-columns: 4fr 3fr;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section header {
+            background-image: linear-gradient(12deg, rgb(139, 176, 224), rgb(53, 209, 209));
+            color: rgb(6, 3, 48);
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+
+        /* Main CSS */
+        main > section {
+            margin-bottom: 40px;
+        }
+
+        .double {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .double > aside:first-child {
+            padding-right: 10px;
+        }
+
+        ul > li {
+            margin-bottom: 10px;
+        }
+
+        #rating {
+            padding-left: 10px;
+        }
+
+        #rating > li {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #rating > li > * {
+            font-weight: 600;
+        }
+
+        #hobbies > li {
+            font-weight: 600;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main-header {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: left;
+                margin: 0 0 20px 30px;
+            }
+            
+            main > section {
+                margin-bottom: 20px;
+            }
+
+            .double {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .double > aside:first-child {
+                padding-right: 0;
+            }
+
+            #rating {
+                padding-left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Alessandro Amantini</h1>
+    <header id="main-header">
+        <address><b>Address: </b>94 Newcomber Road, CV5 6NL</address>
+        <span id="telephone"><b>Phone: </b><a href="tel:+447919824459">(0) 7919 824459</a></span>
+        <span id="email"><b>Email: </b><a href="mailto:ale.amantini1997@gmail.com">ale.amantini1997@gmail.com</a></span>
+        <span id="git"><b>GitHub: </b><a href="https://github.com/Amantini1997">Amantini1997</a></span>
+    </header>
+    <main>
+        <section>
+            <header>EDUCATION</header>
+            <ul id="education-list" type="disk">
+                <li>
+                    <b>2017 – 2021:</b> <a href="https://www.kcl.ac.uk/">King’s College London</a>
+                    <br />
+                    - Bachelor’s Degree in Computer Science with Management 
+                    <br />
+                    - Average 1st year grade <b>[83.63 / 100] (First)</b>
+                    <br />
+                    - Average 2nd year grade <b>[82.25 / 100] (First)</b>
+                </li>
+                <li>
+                    <b>2016 – 2017:</b> <a href="https://www.uniroma1.it/it/pagina-strutturale/home">University La Sapienza</a>
+                    <br />
+                    - Computer Science 
+                </li>
+                <li>
+                    <b>2011 – 2016:</b> <a href="https://www.liceolabriola.it/">L.S.S Antonio Labriola (Italian High School)</a> 
+                    <br />
+                    - Science Subjects Diploma 
+                    <br />
+                    - Final grade (Esame di Maturità) <b>[100/100]</b>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <header>EXPERIENCE</header>
+            <ul type="disk">
+                <li>
+                    <b>2019 - 2020: Placement student</b> at <a href="https://www.flooid.com/">Flooid</a>. 
+                    Here I learnt Ionic and Angular (consolidating my knowledge of Javascript (and Typescript), SCSS and HTML),
+                    and SpringBoot and JAXB. I also happened to maintain some Gatling tests (written in Scala).
+                </li>
+                <li>
+                    <b>2019: Member</b> of a University group in charge of the creation of the dekstop app "BloodTestDiary" 
+                    (included as a repository in the github account) for the NHS department of my University.
+                </li>
+                <li>
+                    <b>2017 - 2019: Vice-President</b> of Garden Halls, student accommodation housing +1000 
+                    students run by University of London - effective time management and event coordination
+                    as well as gained the ability to listen to people’s problems and obtain appropriate solutions.
+                </li>
+                <li>
+                    <b>2018: Leader</b> in the java group project “London Air Bnb” (included as a repository 
+                    in the github account) - delegation and team programming skills developed.
+                </li>
+                <li>
+                    <b>2015: Leader</b> in the Science project “Progetto Scienze Molecolare” - increased 
+                    my ability to find solutions to intellectually challenging problems under time pressure.
+                </li>
+            </ul>
+        </section>
+        <section class="double">
+            <aside>
+                <header>PROGRAMMING LANGUAGES</header>
+                <ul id="rating">
+                    <li data-rate="9"><span>Java</span><div class="circle-ctn"></div></li>
+                    <li data-rate="9" style="margin-bottom: 0;"><span>Javascript </span><div class="circle-ctn"></div></li>        
+                    <small>(ES6 & Typescript)</small>  
+                    <li data-rate="9" style="margin-top: 10px;"><span>SCSS & HTML</span><div class="circle-ctn"></div></li>
+                    <li data-rate="6"><span>Python</span><div class="circle-ctn"></div></li>                  
+                    <li data-rate="6"><span>Scala</span><div class="circle-ctn"></div></li>
+                    <li data-rate="4"><span>C++</span><div class="circle-ctn"></div></li>
+                </ul>
+            </aside>
+            <aside>
+                <header>IT SKILLS & KNOWLEDGE</header>
+                <ul>
+                    <li>Ionic, Angular, React</li>
+                    <li>SQL</li>
+                    <li>Microsoft Office</li>
+                    <li>VCS(GitHub & Mercurial)</li>
+                    <li>Jenkins</li>
+                    <li>Great <b>problem-solving</b> attitude</li>
+                </ul>
+            </aside>
+        </section>
+        <section class="double">
+            <aside>
+                <header>HOBBIES</header>
+                <ul id="hobbies">
+                    <li> Basketball </li>
+                    <li> Travelling </li>
+                    <li> Photoshop </li>
+                    <li> Hackhatons </li>
+                </ul>
+            </aside>
+            <aside>
+                <header>LANGUAGES</header>
+                <ul>
+                    <li> <b>Italian:</b> Native language </li>
+                    <li> <b>English:</b> Fluent </li>
+                    <li> <b>French:</b> basic knowledge <br />
+                        <small>(DELF certificate level)</small></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <script>
+        const MAX_RATE = 10;
+        let ratings = document.querySelectorAll("ul#rating > *[data-rate]");
+        ratings.forEach(rating => {
+            let vote = +rating.dataset.rate;
+            let container = rating.querySelector(".circle-ctn");
+            console.log(container);
+            
+            for(let i = 1; i <= MAX_RATE; i++){
+                let circle = document.createElement("div");
+                circle.classList.add(i <= vote ? "full-circle" : "empty-circle");
+                container.append(circle);
+            }
+        });
+    </script>
+</body>
+</html>

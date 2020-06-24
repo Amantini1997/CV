@@ -8,7 +8,7 @@ import { Card } from '../interfaces';
     <img class="card-icon" [src]="card.source"/>
     <div class="cardText"> 
         <div class="card-title">{{card.title}}</div>
-        <div class="line" [ngStyle]="{'border-color': colour}"></div>
+        <div class="line"></div>
         <!-- <div class="preview">
             {{preview}}
         </div> -->
@@ -25,14 +25,14 @@ export class CardComponent implements OnInit {
   readonly ANIMATION_FACTOR = 0.6;
   readonly TIME_MEASURE = 's';
 
-  @Input() colour: number
+  @Input() color: number
   @Input() card: Card
   @Input() id: number
   constructor() {}
 
   styleObject(): Object {
     return {
-      borderColor: this.colour,
+      borderColor: this.color,
       animationDelay: this.id * this.ANIMATION_FACTOR + this.TIME_MEASURE,
       animationDuration: this.ANIMATION_FACTOR + this.TIME_MEASURE,
     };
