@@ -30,7 +30,7 @@ export class TopButtonComponent implements OnInit {
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   setDisplayButton(): void {
     this.displayButton = window.pageYOffset > this.SCROLL_THRESHOLD;
   }
