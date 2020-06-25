@@ -1,0 +1,6 @@
+npm run deploy
+
+npx ng build --prod --base-href https://Amantini1997.github.io/CV/
+npx ngh --dir dist/AlessandroAmantini-CV
+
+https://Amantini1997.github.io/reponame/CV/
